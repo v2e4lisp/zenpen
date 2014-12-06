@@ -286,7 +286,7 @@ var editor = (function() {
   }
 
   function getWordCount() {
-    var text = get_text(contentField);
+    var text = getText(contentField);
 
     if (text === "") {
       return 0;

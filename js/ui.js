@@ -48,7 +48,7 @@ var ui = (function() {
       localStorage[ 'darkLayout' ] = darkLayout;
       localStorage[ 'wordCount' ] = wordCountElement.value;
     }
-  }
+  } 
 
   function bindElements() {
     // Body element for light/dark styles

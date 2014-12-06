@@ -10,7 +10,7 @@ function supportsHtmlStorage() {
   }
 }
 
-function get_text(el) {
+function getText(el) {
   var ret = " ";
   var length = el.childNodes.length;
   for(var i = 0; i < length; i++) {
@@ -20,7 +20,7 @@ function get_text(el) {
         // Strip white space.
         ret += node.nodeValue;
       } else {
-        ret += get_text( node );
+        ret += getText( node );
       }
     }
   }
