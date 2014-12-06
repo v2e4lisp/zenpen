@@ -1,4 +1,9 @@
-var editor = (function() {
+Zenpen.Editor = (function() {
+
+  // Require
+  var supportsHtmlStorage = Zenpen.Util.supportsHtmlStorage;
+  var trim = Zenpen.Util.trim;
+  var getText = Zenpen.Util.getText;
 
   // Editor elements
   var headerField, contentField, cleanSlate, lastType, currentNodeList, savedSelection;

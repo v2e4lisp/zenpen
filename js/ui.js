@@ -1,4 +1,10 @@
-var ui = (function() {
+Zenpen.UI = (function() {
+
+  // Require
+  var supportsHtmlStorage = Zenpen.Util.supportsHtmlStorage;
+  var trim = Zenpen.Util.trim;
+  var getText = Zenpen.Util.getText;
+
   // Base elements
   var body, article, uiContainer, overlay, aboutButton, descriptionModal, header;
   // Buttons
@@ -14,7 +20,6 @@ var ui = (function() {
   function init() {
     supportsSave = !!new Blob()?true:false;
     bindElements();
-    wordCountActive = false;
 
     if (supportsHtmlStorage()) {
       loadState();
